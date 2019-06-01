@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        <ImageView
+                android:layout_width="85dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/app_logo" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+            <EditText
+                    android:id="@+id/edLoginEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:hint="Enter Your Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="15dp"
+                    android:textColorHint="@color/colorAccent"/>
+
+            <EditText
+                    android:id="@+id/edLoginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:hint="Enter Your Password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="15dp"
+                    android:textColorHint="@color/colorAccent"/>
+
+            <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="7dp"
+                    android:background="@drawable/rounded_button_transparent"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent" />
+
+            <TextView
+                    android:text="NOT Member"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp" android:id="@+id/textView" android:textAlignment="center"
+                    android:textAllCaps="true" android:textColor="@color/colorAccent"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            <Button
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="7dp"
+                    android:background="@drawable/rounded_button_transparent"
+                    android:text="Register"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent" />
+            <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="7dp"
+                    android:background="@drawable/rounded_button_transparent"
+                    android:text="Reset Password"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"/>
+            <ProgressBar
+                    android:id="@+id/progressbarLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
